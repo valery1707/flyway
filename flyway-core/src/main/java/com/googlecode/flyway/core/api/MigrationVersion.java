@@ -55,12 +55,6 @@ public final class MigrationVersion implements Comparable<MigrationVersion> {
                     "Invalid version starting with a dot (.) instead of a digit: " + normalizedVersion);
         }
 
-        if (!normalizedVersion.matches("[\\d\\.]*")) {
-            throw new FlywayException(
-                    "Invalid version containing non-numeric characters. Only 0..9 and . are allowed. Invalid version: "
-                            + normalizedVersion);
-        }
-
         this.version = normalizedVersion;
         this.displayText = normalizedVersion;
     }
