@@ -96,4 +96,7 @@ public interface MetaDataTable {
      * @return {@code true} if it does, {@code false} if it doesn't.
      */
     boolean hasSchemasMarker();
+
+    @Deprecated
+    void setUpgraded(boolean upgraded);
 }

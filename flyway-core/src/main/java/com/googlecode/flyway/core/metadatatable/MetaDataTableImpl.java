@@ -381,4 +381,10 @@ public class MetaDataTableImpl implements MetaDataTable {
     public String toString() {
         return table.toString();
     }
+
+    @Override
+    @Deprecated
+    public void setUpgraded(boolean upgraded) {
+        this.upgraded = upgraded;
+    }
 }
