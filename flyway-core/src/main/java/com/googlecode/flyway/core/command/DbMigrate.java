@@ -162,7 +162,7 @@ public class DbMigrate {
                                     LOG.warn("Schema " + schema + " has version " + currentSchemaVersion
                                             + ", but no migration could be resolved in the configured locations !");
                                 } else {
-                                    LOG.warn("Schema " + schema + " has a version (" + currentSchemaVersion
+                                    LOG.debug("Schema " + schema + " has a version (" + currentSchemaVersion
                                             + ") that is newer than the latest available migration ("
                                             + resolved[resolved.length - 1].getVersion() + ") !");
                                 }
